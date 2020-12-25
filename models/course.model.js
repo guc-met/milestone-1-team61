@@ -8,7 +8,8 @@ var courses = new Schema({
     course_teachers:{type:Array,default:[""]},
     course_professors:{type:Array,default:[""]},
     credit_hours:{type:Number, default:0},
-    department:{type:String , required:true}
+    department:{type:String , required:true},
+    course_coordinator:{type:String}
 });
 
 module.exports = mongoose.model('course',courses)
