@@ -4,7 +4,8 @@ const mongoose = require('mongoose');
 const connection = mongoose.connection;
 const staffroutes = require('./API/Routes/gucstaff.routes');
 const hrroutes = require('./API/Routes/hr.routes');
-
+const Courseinst = require('./API/Routes/CourseInst.routes');
+let slot = require('./models/slot.model.js');
 let gucStaff = require('./models/gucstaff.model');
 let gucHr = require('./models/guchr.model');
 let attendance = require('./models/attendance');
