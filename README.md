@@ -3,4 +3,4 @@
 # Port used 3000
 
 # routes for HR is '/hr'
-# routes for common functionialities is '/'
+# routes for common functionialities in part 2  is '/'
