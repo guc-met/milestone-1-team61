@@ -11,7 +11,7 @@ const jwt = require('jsonwebtoken');
 const { findOne } = require('../../models/gucstaff.model');
 const gucstaffModel = require('../../models/gucstaff.model');
 const requests = require('../../models/requests');
-const slot = require('../../models/slot');
+const slot = require('../../models/slot.model');
 
 router.get('/viewSlotLinking', getToken , function (req , res){
    
