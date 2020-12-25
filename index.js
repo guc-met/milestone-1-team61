@@ -115,8 +115,7 @@ function attndanceSystem (){
 
 
 
-var dailyJob = schedule.scheduleJob("0 22 * * *",  function() {
-  console.log("sfsffs");
+var dailyJob = schedule.scheduleJob("0 19 * * *",  function() {
   attndanceSystem();
   
 });
@@ -124,7 +123,7 @@ var dailyJob = schedule.scheduleJob("0 22 * * *",  function() {
 ///////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
 
 
-mongoose.connect('mongodb://localhost:27017/Toty', { useNewUrlParser: true,useUnifiedTopology: true  }).catch(error => handleError(error));
+mongoose.connect('mongodb+srv://team61:team61@cluster0.9wafp.mongodb.net/Toty?retryWrites=true&w=majority', { useNewUrlParser: true,useUnifiedTopology: true  }).catch(error => handleError(error));
 
 
 app.use('/',staffroutes);
