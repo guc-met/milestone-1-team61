@@ -6,7 +6,7 @@ const staffroutes = require('./API/Routes/gucstaff.routes');
 const hrroutes = require('./API/Routes/hr.routes');
 const HODroutes = require('./API/Routes/HOD.routes');
 const CCroutes = require('./API/Routes/CC.routes');  
-const courseinst = require('./API/Routes/Courseinst.routes');
+const courseinst = require('./API/Routes/CourseInst.routes');
 
 let slot = require('./models/slot.model');
 let gucStaff = require('./models/gucstaff.model');
