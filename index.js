@@ -5,7 +5,7 @@ const connection = mongoose.connection;
 const staffroutes = require('./API/Routes/gucstaff.routes');
 const hrroutes = require('./API/Routes/hr.routes');
 const HODroutes = require('./API/Routes/HOD.routes');
-const CCroutes = require('./API/Routes/CC.routes');
+const CCroutes = require('./API/Routes/CC.routes');  
 
 
 let gucStaff = require('./models/gucstaff.model');
