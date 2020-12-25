@@ -4,6 +4,9 @@ const mongoose = require('mongoose');
 const connection = mongoose.connection;
 const staffroutes = require('./API/Routes/gucstaff.routes');
 const hrroutes = require('./API/Routes/hr.routes');
+const HODroutes = require('./API/Routes/HOD.routes');
+const CCroutes = require('./API/Routes/CC.routes');
+
 
 let gucStaff = require('./models/gucstaff.model');
 let gucHr = require('./models/guchr.model');
@@ -128,6 +131,9 @@ mongoose.connect('mongodb+srv://team61:team61@cluster0.9wafp.mongodb.net/Toty?re
 
 app.use('/',staffroutes);
 app.use('/hr',hrroutes);
+app.use('/HOD',HODroutes);
+app.use('/CC',CCroutes);
+
 
 app.listen(3000,function(){
   console.log("Server running on port 3000");
